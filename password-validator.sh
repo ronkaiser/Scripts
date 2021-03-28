@@ -34,4 +34,7 @@ else REASON+="password does not include digits\n"; fi
 
 if [ $OK == 4 ]; then echo "${GREEN}Your password is awesome!"; exit 0
 else echo -e "${RED}Weak Password\n$REASON"; fi
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ad5fa4f2f4f65ab42c085a23387529f7e5add50
