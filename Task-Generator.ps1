@@ -1,3 +1,28 @@
+ <#
+  .SYNOPSIS
+  Create scheduled task
+
+  .SYNTAX
+  Task-Generator.ps1 [[-TaskName <String>] [-WaitSeconds <Integer>]
+
+  .DESCRIPTION
+  Create scheduled task by using user's parameters such as: task name and how long the task will remain enabled.
+  This script will execute first mytask.ps1 script which create file that contain string.
+  The main task will open the file that has been created using notepad every 1 minute and print all enabled tasks.
+  Task will be disabled after number of sceconds that has been set by the user.
+
+  .PARAMETERS
+      -TaskName
+          Specifies the task name.
+
+      -WaitSeconds
+          Specifies number of seconds before task will be disabled.
+
+  .EXAMPLE
+  Task-Generator.ps1 -TaskName "MyCoolTaskName" -WaitSeconds "120"
+#> 
+
+
 param(
     [Parameter(Mandatory = $true)]
     $TaskName,
