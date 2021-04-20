@@ -2,6 +2,7 @@
 
 # Environment variables definitions such as: string from the user, reasons for condition failures,
 # colors and OK status.
+# Run the script: ./password-validator.sh '[password]'
 
 PASS=$1
 REASON=""
